@@ -107,6 +107,7 @@ namespace Wpf_ADAM_RFID_20190504
                 {
                     label.Content = "检测到车辆闯红灯" + tag;
                 }
+
                 rfid.SendEpcSection ();
             }
         }
