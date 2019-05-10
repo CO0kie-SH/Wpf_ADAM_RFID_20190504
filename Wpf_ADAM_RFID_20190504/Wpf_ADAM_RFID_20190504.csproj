@@ -35,8 +35,18 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Camera.Net">
+      <HintPath>dll\Camera.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="NLE.Device.ADAM">
+      <HintPath>dll\NLE.Device.ADAM.dll</HintPath>
+    </Reference>
+    <Reference Include="NLE.Device.UHF">
+      <HintPath>dll\NLE.Device.UHF.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -94,6 +104,19 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="cppdll\Camera.Native.dll" />
+    <Content Include="cppdll\opencv_ffmpeg320.dll" />
+    <Content Include="cppdll\opencv_world320.dll" />
+    <Content Include="dll\Camera.Net.dll" />
+    <Content Include="dll\NLE.Device.ADAM.dll" />
+    <Content Include="dll\NLE.Device.UHF.dll" />
+    <Resource Include="img\小汽车.jpg" />
+    <Resource Include="img\红灯.PNG" />
+    <Resource Include="img\绿灯.PNG" />
+    <Resource Include="img\黄灯.PNG" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -5,8 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Wpf_ADAM_RFID_20190504"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="350" Width="525" Closing="Window_Closing">
     <Grid>
-        
+        <Image x:Name="imgRGB" HorizontalAlignment="Left" Height="270" Margin="407,10,0,0" VerticalAlignment="Top" Width="100" Source="img/黄灯.PNG"/>
+        <Canvas HorizontalAlignment="Left" Height="100" Margin="10,180,0,0" VerticalAlignment="Top" Width="392">
+            <Image x:Name="imgCar" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="215" Source="img/小汽车.jpg"/>
+        </Canvas>
+        <Label x:Name="label" Content="" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Background="#FFFDF289" FontWeight="Bold" FontSize="24"/>
+        <Button x:Name="btn" Content="打开监控" HorizontalAlignment="Left" Margin="127,285,0,0" VerticalAlignment="Top" Width="75" Click="btn_Click"/>
+        <Button x:Name="button_Copy" Content="打开拍照路径" HorizontalAlignment="Left" Margin="207,285,0,0" VerticalAlignment="Top" Width="75" Click="button_Copy_Click"/>
+        <Button x:Name="button_Copy1" Content="设置" HorizontalAlignment="Left" Margin="287,285,0,0" VerticalAlignment="Top" Width="75"/>
+
     </Grid>
 </Window>
